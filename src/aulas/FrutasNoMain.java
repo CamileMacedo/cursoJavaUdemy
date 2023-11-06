@@ -2,7 +2,7 @@ package aulas;
 
 import java.util.Scanner;
 
-public class AulasFuncoes {
+public class FrutasNoMain {
     public static void main(String[] args) {
         int qtde;
         String frutas[];
@@ -18,13 +18,12 @@ public class AulasFuncoes {
             System.out.println("Informe o nome da Fruta: ");
             frutas[i] = teclado.nextLine();
         }
-
+        
         System.out.println("\n");
 
         for(int j=0 ; j<qtde; j++){
             System.out.println(frutas[j]);
         }
-        
         teclado.close();
     }
     

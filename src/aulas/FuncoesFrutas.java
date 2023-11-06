@@ -10,50 +10,63 @@ package aulas;
 
 import java.util.Scanner;
 
-//Não fechar o teclado quando declara o Scanner no public class;
 
 public class FuncoesFrutas {
-    // variáveis globais
-    static Scanner teclado = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        int qtdeMain;
-        qtdeMain = size_frutas();
-        cadastrar_dados(qtdeMain);
-        System.out.println(finish());
+    private Scanner teclado;
+    private String frutas[];
 
-        teclado.close(); //só fechei o teclado quando acabou a utilidade dele
+    //Construtor da classe
+    public FuncoesFrutas() {
+        System.out.println("Criou instancia\n");
+
+        
+        this.frutas = new String[0];
+        this.teclado = new Scanner(System.in);
     }
-    
-    static int size_frutas(){
+
+    public int sizeFrutas(){
         int qtdeSize;
 
         System.out.println("Informe a quantidade de frutas que deseja cadastrar: ");
         qtdeSize = Integer.parseInt(teclado.nextLine());
-
         
         return qtdeSize;
     }
 
-    static void cadastrar_dados(int qtde) {
-        String frutas[];
-
+    public void cadastrarDados(int qtde) {
         //definindo o tamanho
         frutas = new String[qtde];
 
-        for(int i = 0; i < qtde; i++){
+        for(int i = 0; i < frutas.length; i++){
             System.out.println("Informe o nome da Fruta: ");
             frutas[i] = teclado.nextLine();
-        }
+        }        
+    }
 
+    public String finish(){
         System.out.println("\n");
 
-        for(int j=0 ; j<qtde; j++){
+        for(int j=0; j < frutas.length; j++){
             System.out.println(frutas[j]);
         }
+
+        teclado.close();
+        return "\nItens cadastrados com sucesso!";
     }
 
-    static String finish(){
-        return "\nPrograma concluído!";
-    }
+    //Programa executado no main/Main.java
+    //.
+    //.
+    // public static void main(String[] args) {
+    //     int qtdeMain;
+
+    //     FuncoesFrutas instancia = new FuncoesFrutas();
+
+    //     qtdeMain = instancia.sizeFrutas();
+    //     instancia.cadastrarDados(qtdeMain);
+    //     System.out.println(instancia.finish());
+
+    //      //só fechei o teclado quando acabou a utilidade dele
+    // }
 }

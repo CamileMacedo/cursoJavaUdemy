@@ -1,1 +1,12 @@
 Java é uma programação 100% orientada a objeto.
+
+Pilares da orientação a objeto:
+    - Encapsulamento
+    - Herança
+    - Polimorfismo
+
+
+    - Singleton (Instância única)
+    - Public    (todos os lugares)
+    - Private
+    - Protect   (mesmo pacote)
