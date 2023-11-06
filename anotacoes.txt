@@ -1,0 +1,1 @@
+Java é uma programação 100% orientada a objeto.
