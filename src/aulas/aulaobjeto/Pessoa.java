@@ -15,4 +15,10 @@ public class Pessoa {
         this.email = email;
         this.anoNascimento = anoNascimento;
     }
+
+    void Informations(){
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Emaiil: " + this.email);
+        System.out.println("Data de nascimento: " + this.anoNascimento);
+    }
 }

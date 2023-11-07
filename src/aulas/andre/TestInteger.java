@@ -1,4 +1,4 @@
-package aulas;
+package aulas.andre;
 
 public class TestInteger {
 

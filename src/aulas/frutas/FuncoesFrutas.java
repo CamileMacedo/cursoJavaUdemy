@@ -1,4 +1,4 @@
-package aulas;
+package aulas.frutas;
 
 
 /* Uma função deve ter:

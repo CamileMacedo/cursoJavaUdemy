@@ -10,3 +10,14 @@ Pilares da orientação a objeto:
     - Public    (todos os lugares)
     - Private
     - Protect   (mesmo pacote)
+
+    Organizando o código
+        Pacotes:
+            - Sempre em minúsculo Ex: br.com.camile.pacote
+            - Servem para organizar o código fonte
+            - nomes de pacotes NÂO podem ter:
+                - letras maiúsculas, espaço, sem caracteres especiais, acentos;
+            Convenção:
+                - domnínio da empresa
+                - último nome é o específico do pacote
+             

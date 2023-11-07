@@ -1,4 +1,4 @@
-package aulas;
+package aulas.frutas;
 
 import java.util.Scanner;
 
