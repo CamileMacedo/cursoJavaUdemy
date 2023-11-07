@@ -1,6 +1,6 @@
 package main;
 
-import aulas.FuncoesFrutas;
+import aulas.frutas.FuncoesFrutas;
 
 public class Main {
 

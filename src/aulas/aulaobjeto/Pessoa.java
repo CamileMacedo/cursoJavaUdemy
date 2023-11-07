@@ -10,7 +10,7 @@ public class Pessoa {
     public Pessoa(){};
 
     //Construtor com parâmetros
-    public Pessoa(String nome, String email, int anoNascimento){
+    Pessoa(String nome, String email, int anoNascimento){
         this.nome = nome;
         this.email = email;
         this.anoNascimento = anoNascimento;
