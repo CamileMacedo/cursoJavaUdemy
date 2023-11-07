@@ -9,8 +9,8 @@ public class Main {
         FuncoesFrutas frutas = new FuncoesFrutas();
         FuncoesFrutas frutas2 = new FuncoesFrutas();
 
-        frutas.cadastrarDados(frutas.sizeFrutas());
-        frutas2.cadastrarDados(frutas2.sizeFrutas());
+        frutas.cadastrarDados(frutas.sizeFruits());
+        frutas2.cadastrarDados(frutas2.sizeFruits());
 
         System.out.println(frutas.finish());
         System.out.println(frutas2.finish());

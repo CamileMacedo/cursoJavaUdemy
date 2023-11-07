@@ -9,15 +9,43 @@ Pilares da orientação a objeto:
     - Singleton (Instância única)
     - Public    (todos os lugares)
     - Private
-    - Protect   (mesmo pacote)
+    - Protected   (mesmo pacote)
 
-    Organizando o código
-        Pacotes:
-            - Sempre em minúsculo Ex: br.com.camile.pacote
-            - Servem para organizar o código fonte
-            - nomes de pacotes NÂO podem ter:
-                - letras maiúsculas, espaço, sem caracteres especiais, acentos;
-            Convenção:
-                - domnínio da empresa
-                - último nome é o específico do pacote
-             
+Organizando o código
+    Pacotes:
+        - Sempre em minúsculo Ex: br.com.camile.pacote
+        - Servem para organizar o código fonte
+        - nomes de pacotes NÂO podem ter:
+            - letras maiúsculas, espaço, sem caracteres especiais, acentos;
+        Convenção:
+            - domnínio da empresa
+            - último nome é o específico do pacote
+
+Getters e Setters
+    Getters
+        - É um método público para consultar dados;
+            - Ele só retorna o valor do atributo;
+        - nomenclatura:
+            get_nomeAtributo;        
+
+        //método getter
+        Exemplo: sessao11
+            public float getSaldo(){
+                return this.saldo;
+            }
+
+
+!!!
+//Professor disse que o construtor é obrigatório ser público, o que não é verdade pois 
+//existe o método Singleton, neste método, nós criamos um construtor privado e dele nós
+//instanciamos métodos dentro da classe para manipular este construtor;
+
+Public:
+    - Acesso em todo projeto, podemos importar para outros pacotes
+
+Private:
+    - Só pode ser acessado pela classe
+
+Protected:
+    - Padrão do java.
+    - Acesso no mesmo pacote em que está.

@@ -25,7 +25,7 @@ public class FuncoesFrutas {
         this.teclado = new Scanner(System.in);
     }
 
-    public int sizeFrutas(){
+    public int sizeFruits(){
         int qtdeSize;
 
         System.out.println("Informe a quantidade de frutas que deseja cadastrar: ");

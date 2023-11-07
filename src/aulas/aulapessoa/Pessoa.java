@@ -1,4 +1,4 @@
-package aulas.aulaobjeto;
+package aulas.aulapessoa;
 //
 
 //Construtor

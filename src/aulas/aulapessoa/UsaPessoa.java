@@ -1,4 +1,4 @@
-package aulas.aulaobjeto;
+package aulas.aulapessoa;
 
 public class UsaPessoa {
     public static void main(String[] args) {
