@@ -49,3 +49,6 @@ Private:
 Protected:
     - Padrão do java.
     - Acesso no mesmo pacote em que está.
+
+Classes podem ser protected ou públicas.
+

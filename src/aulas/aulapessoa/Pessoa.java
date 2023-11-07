@@ -1,24 +1,24 @@
 package aulas.aulapessoa;
 //
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 //Construtor
-public class Pessoa {
-    String nome, email;
-    int anoNascimento;
+public interface Pessoa {
+    
+    String getNome();
 
-    //construtor vazio;
-    public Pessoa(){};
+    String getEmail();
 
-    //Construtor com parâmetros
-    Pessoa(String nome, String email, int anoNascimento){
-        this.nome = nome;
-        this.email = email;
-        this.anoNascimento = anoNascimento;
-    }
+    String getAnoNascimento();
 
-    void Informations(){
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Emaiil: " + this.email);
-        System.out.println("Data de nascimento: " + this.anoNascimento);
+    List<String> getPermissions();
+
+    public default void informations(){
+        System.out.println("Nome: " + getNome());
+        System.out.println("Email: " + getEmail());
+        System.out.println("Data de nascimento: " + getAnoNascimento());
+        System.out.println("Permissão: " + getPermissions().stream().collect(Collectors.joining(", ")));
     }
 }
