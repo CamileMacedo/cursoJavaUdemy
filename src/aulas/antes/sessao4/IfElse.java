@@ -1,4 +1,4 @@
-package aulas.sessao4;
+package aulas.antes.sessao4;
 
 public class IfElse {
     public static void main(String[] args){

@@ -52,12 +52,11 @@ public class Professor implements Pessoa {
     }
 
     public void darNota() {
-
+        System.out.println("Atribuiu as Notas\n");
     }
 
     public void corrigirProva() {
-        
+        System.out.println("Coorigiu provas!\n");
     }
-
     
 }

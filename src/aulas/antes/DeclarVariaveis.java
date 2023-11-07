@@ -1,4 +1,4 @@
-package aulas;
+package aulas.antes;
 public class DeclarVariaveis {
     //Declarando uma variável int
     int value1;

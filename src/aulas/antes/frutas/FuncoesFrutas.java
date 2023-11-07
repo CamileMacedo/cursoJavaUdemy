@@ -1,4 +1,4 @@
-package aulas.frutas;
+package aulas.antes.frutas;
 
 
 /* Uma função deve ter:

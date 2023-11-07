@@ -1,8 +1,6 @@
-package main;
+package aulas.antes.frutas;
 
-import aulas.frutas.FuncoesFrutas;
-
-public class Main {
+public class MainFruits {
 
     public static void main(String[] args) {
         

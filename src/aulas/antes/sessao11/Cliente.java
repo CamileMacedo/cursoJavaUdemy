@@ -1,4 +1,4 @@
-package aulas.sessao11;
+package aulas.antes.sessao11;
 
 import java.util.Scanner;
 

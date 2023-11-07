@@ -1,4 +1,4 @@
-package aulas.sessao2;
+package aulas.antes.sessao2;
 public class ProHelloWorld {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
