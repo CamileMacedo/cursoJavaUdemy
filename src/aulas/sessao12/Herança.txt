@@ -1,3 +1,0 @@
-Herança
-    - pilar da Orientação a Objeto.
-    
