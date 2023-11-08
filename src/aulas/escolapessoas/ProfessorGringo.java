@@ -1,4 +1,4 @@
-package aulas.sessao12;
+package aulas.escolapessoas;
 
 import aulas.aulapessoa.Gringo;
 

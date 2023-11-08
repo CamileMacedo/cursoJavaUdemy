@@ -9,20 +9,20 @@ public class Cliente {
     public Cliente(String nome, String enderenco){
             this.nome = nome;
             this.endereco = enderenco;
-            this.ConfirmacaoCliente();
+            this.confirmacaoCliente();
     }
 
-    private void ConfirmacaoCliente(){
+    private void confirmacaoCliente(){
         System.out.println("Cliente " + nome + " Cadastrado!\n");
     }
 
-    float ValorSaque(float saldo){
+    float valorSaque(float saldo){
         System.out.println("Olá " + this.nome + "!\nSaldo disponível: " + saldo + "\nQual valor deseja sacar?");
         float valorSaque = Integer.parseInt(teclado.nextLine());
         return valorSaque;
     }
 
-    float ValorDeposito(float saldo){
+    float valorDeposito(float saldo){
         System.out.println("Olá " + this.nome + "!\nSaldo disponível: " + saldo + "\nQual valor deseja depositar?");
         float ValorDeposito= Integer.parseInt(teclado.nextLine());
         return ValorDeposito;

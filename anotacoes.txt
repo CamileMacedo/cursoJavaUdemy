@@ -1,6 +1,8 @@
 Interface
 Classes
 
+constantes - sempre maiúsculos
+
 polimorfismo - ações que se comportam diferentes se referenciando do mesmo objeto
 
 Estudar:
@@ -16,6 +18,125 @@ Aula pessoa e sessão12:
  - Professor (classe com a interface Pessoa implementada)
  - ProfessorGringo (è uma classe, tem a classe Professor como herança e a interface Gingo implementada)
 
- Herança de classes - a Classe que tem a herança pega todos os atributos e métodos da classe de origem
- Interface - Determina padrões que devem ser seguidos para ser declarado de tal objeto
- polimorfismo - Exemplo do @UsaPessoa , a mesma ação que se comporta de jeitos diferentes para o mesmo tipo de objeto.
+ Herança de classes:
+    A Classe que tem a herança pega todos os atributos e métodos da classe de origem
+ 
+ Interface:
+    Determina padrões que devem ser seguidos para ser declarado de tal objeto
+    - REGRAS que devem ser seguidas pelas classe que a implementarão.
+ 
+ Polimorfismo:
+    Exemplo do @UsaPessoa , a mesma ação que se comporta de jeitos diferentes para o mesmo tipo de objeto.
+    Poli: muitos / Morfismo: forma - Polimorfismo: Muitas formas.
+    - Objetos do mesmo tipo agindo de formas diferentes.
+    - 
+
+08/11/2023
+ toda classe herda por padrão uma classe chamada object.
+ pesquisar sobre o package (protected, public, private...)
+
+O método toString mostra o endereço de momória;
+
+Sobrecarga de método / Olerload
+    - Sobreescrevemos um método com a mesma classe de declaração;
+    Exemplo:
+        void menssagem(){};
+        void menssagem(String msg){};
+
+Sobreescrita de método / Overriding:
+    - Sobre escrever métodos da classe de origem em classes que terá a herança
+    Exemplo:
+        mudar a função do toString que é padrão da class object
+
+
+Classe Abstrata:
+    - Proporciona um bloqueio na criação de objetos dessa classe;
+    - Não conseguimos instânciar um objeto da classe abstrato;
+    Pode ter:
+        - Atributos;
+        - Métodos;
+        - Métodos abstratos;
+
+Métodos Abstratos:
+    -   Não possuem implementação, somente declaração e as classes que herdaram precisam obrigatóriamente implementa-las.
+
+
+Template Method:
+    - O padrão template define o esqueleto de um algoritmo dentro de um método.
+    - Transfere seus p0assos para subclasses
+    - Permite que as subclasses redefinam certos passos sem alterar a estrutura
+    Exemplo:
+        TemplateMethod(){
+            passo1(); // implementados de acordo com as classes filhas
+            passo2(); // 
+            passo3(); // 
+        }
+
+Método "final nomeMetodo();" // usado em classes abstratas
+    Modificador de acesso que faz com que o elemento que esteja utilizando não posssa ser extendido ou reescrito;
+    Não coinseguiria ter classes com heranças de uma classe final.
+    Não posso sobreescrever estes metodos.
+    - Não é obrigatório mesmo dentro da classe abstrata.
+
+Algoritmos:
+    Sequencias de passos a fim de realizar um objetivo em comum;
+
+Atributos estáticos:
+    Os valores são compartilhadods entre as instencias da classe;
+    nomeClasse.atributoEstatico
+
+Métodos estáticos:
+    Não depende de uma instancia de uma classe para ser utilizado, pode se utilizar conforme:
+        nomeClasse.metodo();
+
+
+TRATAMENTO DE ERROS
+
+Try/cath
+    try{
+        codigo
+    }cath(ArrayIndexOutOfBoundsException e){ // é convenção
+        faça quando o erro ocorrer
+    }
+
+    - É possível ter muitos caths, como o "ifElse"
+    
+    Exemplo:
+        Divisão por zero
+
+Finally:
+    Faz parte do Try/Cath Após o cath, funciona mesmo se entrar no cath.
+
+    try{
+        faça se não der erro
+    }cath(ArrayIndexOutOfBoundsException e){ // é convenção
+        faça quando o erro ocorrer
+    }finally{
+        faça isso também independente do erro
+    }
+
+Throws:
+    class classeExemplo() throws Exception{
+
+    }
+
+    se houver a possibilidade de acontecer um erro não checado, ele vai avisar no debug, e ai podemos utilizar o 
+
+
+
+Quando falamos de exceções no JAva, existem dois grupos de exceções:
+    Checked Exceptions:
+    - O compilador não deixar rodar o programa, mostra no debug.
+        Menos perigosas.
+        - Exception
+        - IOException / input output
+        - SQLException / banco de dados
+
+    Unchecked Exceptions:
+    - Pode acontecer em tempo de produção
+        Mais perigosas.
+        - RuntimeException / tempo de execução
+        - NullPointerException
+        - ArrayIndexOutOfBoundsException
+
+
