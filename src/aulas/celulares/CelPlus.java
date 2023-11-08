@@ -12,7 +12,8 @@ public class CelPlus extends Celular {
 
     @Override
     public void showInfo() {
-        System.out.println("Marca da Televisão: "+ getMarca());
+        System.out.println("Id do produto: " + getIdCel());
+        System.out.println("Marca do Celular: "+ getMarca());
         System.out.println("Tela: " + getTela());
         System.out.println("Valor: " + getValor());
         System.out.println("Fone: " + this.fone);

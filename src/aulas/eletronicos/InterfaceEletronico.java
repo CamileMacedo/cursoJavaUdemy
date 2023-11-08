@@ -1,6 +1,7 @@
 package aulas.eletronicos;
 
 public interface InterfaceEletronico {
+    public static int contador = 1;
 
     public String getNomeEle();
     public String getCategoriaEle();

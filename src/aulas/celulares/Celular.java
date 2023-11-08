@@ -3,24 +3,35 @@ package aulas.celulares;
 public abstract class Celular {
     private String marca, tela;
     private double valor;
+    private int idCel;
 
-    public String getMarca() {
-        return marca;
-    }
-
-    public String getTela() {
-        return tela;
-    }
-
-    public double getValor() {
-        return valor;
-    }
+    private static int contador = 1;
 
     public Celular (String marca, String tela, double valor) {
+        this.idCel = contador;
         this.marca = marca;
         this.tela = tela;
         this.valor = valor;
+        Celular.contador = Celular.contador + 1;
     }
+
+    public int getIdCel() {
+        return idCel;
+    }
+
+    public String getMarca() {
+        return this.marca;
+    }
+
+    public String getTela() {
+        return this.tela;
+    }
+
+    public double getValor() {
+        return this.valor;
+    }
+
+    
 
     public abstract void showInfo();
         //Corpo do showInfo, tirei para entender a aula de classe abstrata

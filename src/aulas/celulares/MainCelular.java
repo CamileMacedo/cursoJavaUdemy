@@ -13,11 +13,11 @@ public class MainCelular {
         // System.out.println("\nCalular 1: ");
         // cel1.showInfo();
 
-        System.out.println("\nCelular 2: ");
+        System.out.println("\n\tCelular 2");
         cel2.showInfo();
         cel2.finalMethod();
         
-        System.out.println("\nCelular3: ");
+        System.out.println("\n\tCelular 3");
         cel3.showInfo();
         cel3.finalMethod();
         

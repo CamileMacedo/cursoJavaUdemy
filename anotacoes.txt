@@ -81,3 +81,62 @@ Método "final nomeMetodo();" // usado em classes abstratas
 Algoritmos:
     Sequencias de passos a fim de realizar um objetivo em comum;
 
+Atributos estáticos:
+    Os valores são compartilhadods entre as instencias da classe;
+    nomeClasse.atributoEstatico
+
+Métodos estáticos:
+    Não depende de uma instancia de uma classe para ser utilizado, pode se utilizar conforme:
+        nomeClasse.metodo();
+
+
+TRATAMENTO DE ERROS
+
+Try/cath
+    try{
+        codigo
+    }cath(ArrayIndexOutOfBoundsException e){ // é convenção
+        faça quando o erro ocorrer
+    }
+
+    - É possível ter muitos caths, como o "ifElse"
+    
+    Exemplo:
+        Divisão por zero
+
+Finally:
+    Faz parte do Try/Cath Após o cath, funciona mesmo se entrar no cath.
+
+    try{
+        faça se não der erro
+    }cath(ArrayIndexOutOfBoundsException e){ // é convenção
+        faça quando o erro ocorrer
+    }finally{
+        faça isso também independente do erro
+    }
+
+Throws:
+    class classeExemplo() throws Exception{
+
+    }
+
+    se houver a possibilidade de acontecer um erro não checado, ele vai avisar no debug, e ai podemos utilizar o 
+
+
+
+Quando falamos de exceções no JAva, existem dois grupos de exceções:
+    Checked Exceptions:
+    - O compilador não deixar rodar o programa, mostra no debug.
+        Menos perigosas.
+        - Exception
+        - IOException / input output
+        - SQLException / banco de dados
+
+    Unchecked Exceptions:
+    - Pode acontecer em tempo de produção
+        Mais perigosas.
+        - RuntimeException / tempo de execução
+        - NullPointerException
+        - ArrayIndexOutOfBoundsException
+
+
