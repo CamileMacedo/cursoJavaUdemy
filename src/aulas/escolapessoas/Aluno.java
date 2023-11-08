@@ -1,34 +1,34 @@
-package aulas.sessao12;
-
+package aulas.escolapessoas;
 import java.util.Arrays;
 import java.util.List;
 
 import aulas.aulapessoa.Pessoa;
 
-public class Professor implements Pessoa {
+
+public class Aluno implements Pessoa {
 
     private String nome;
     private String email;
     private String anoNascimento;
-    private String numeroRegistro;
+    private String ra;
 
-    public Professor(String nome, String email, String anoNascimento, String numeroRegistro) {
+
+    public Aluno(String nome, String email, String anoNascimento, String ra) {
+        
         this.nome = nome;
         this.email = email;
         this.anoNascimento = anoNascimento;
-        this.numeroRegistro = numeroRegistro;
+        this.ra = ra;
+    }
+
+    public String getRA() {
+        return this.ra;
     }
 
     @Override
     public void informations() {
         Pessoa.super.informations();
-
-        System.out.println("Numero Registro: " + this.numeroRegistro);
-
-    }
-
-    public String getNumeroRegistro() {
-        return numeroRegistro;
+        System.out.println("RA: " + this.ra);
     }
 
     @Override
@@ -48,15 +48,10 @@ public class Professor implements Pessoa {
 
     @Override
     public List<String> getPermissions() {
-        return Arrays.asList("SALA_AULA", "SALA_PROFESSORES");
+        return Arrays.asList("SALA_AULA");
     }
 
-    public void darNota() {
-        System.out.println("Atribuiu as Notas\n");
+    public void fazerProva() {
+        
     }
-
-    public void corrigirProva() {
-        System.out.println("Coorigiu provas!\n");
-    }
-    
 }

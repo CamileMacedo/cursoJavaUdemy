@@ -9,7 +9,7 @@ public class MainBanco {
         Conta conta1 = new Conta(1, 100, 1000, cliente1);
         Conta conta2 = new Conta(2, 1000, 10000, cliente2);
         
-        conta1.efetuarDeposito(cliente1.ValorDeposito(conta1.getSaldo()));
-        conta2.efetuarSaque(cliente2.ValorSaque(conta2.getSaldo()));
+        conta1.efetuarDeposito(cliente1.valorDeposito(conta1.getSaldo()));
+        conta2.efetuarSaque(cliente2.valorSaque(conta2.getSaldo()));
     }
 }
