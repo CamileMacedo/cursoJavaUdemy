@@ -1,3 +1,75 @@
+package aulas.colections;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.Iterator;
+import java.util.Map;
+
+
+public class ListSetMap {
+    
+    public static void main(String[] args) {
+        
+        List<Integer> list1 = new ArrayList<Integer>();
+
+        list1.add(10);
+        list1.add(6);
+        list1.add(null);
+        list1.add(null);
+        list1.add(10);
+        printList(list1);
+
+        System.out.println("\n");
+
+        Set<Integer> set1 = new HashSet<>();
+        
+        set1.add(100);
+        set1.add(60);
+        set1.add(null);
+        set1.add(null);
+        set1.add(100);
+        printSet(set1);
+
+        System.out.println("\n");
+
+        Map<String, Integer> map1 = new HashMap<>();
+        
+        map1.put("Joao", 20);
+        map1.put("Maria", 24);
+        map1.put("Carlos", 21);
+        map1.put("Giulia", null);
+        printSet(map1);
+
+    }
+
+
+    private static void printList(List<Integer> list1) {
+        for(int i = 0; i < list1.size(); i++) {
+            System.out.println(list1.get(i));
+        }
+    }
+
+
+    private static void printSet(Set<Integer> set1) {  
+        Iterator<Integer> iterator =set1.iterator();
+
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+    }
+
+    private static void printMap(Map<String, Integer> map1) {  
+        Iterator<Integer> iterator =map1.iterator();
+
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+    }
+}
+//
+
 Interface
 Classes
 
@@ -9,16 +81,18 @@ Estudar:
     -Scream
     -Java funcional
 
-Aula pessoa e sessão12:
- - Gringo (interface)
- - Pessoa (interface)
- - UsaPessoa (Programa onde colocamos o Main)
- - Aluno (classe com a interface Pessoa implementada)
- - AlunoGringo (classe que tem a classe Aluno como herança e a interface Gringo implementada)
- - Professor (classe com a interface Pessoa implementada)
- - ProfessorGringo (è uma classe, tem a classe Professor como herança e a interface Gingo implementada)
+Aula pessoa e sessão1
+{
+    - Gringo (interface)
+    - Pessoa (interface)
+    - UsaPessoa (Programa onde colocamos o Main)
+    - Aluno (classe com a interface Pessoa implementada)
+    - AlunoGringo (classe que tem a classe Aluno como herança e a interface Gringo implementada)
+    - Professor (classe com a interface Pessoa implementada)
+    - ProfessorGringo (è uma classe, tem a classe Professor como herança e a interface Gingo implementada)
+}
 
- Herança de classes:
+ Herança de classes:{
     A Classe que tem a herança pega todos os atributos e métodos da classe de origem
  
  Interface:
@@ -29,7 +103,7 @@ Aula pessoa e sessão12:
     Exemplo do @UsaPessoa , a mesma ação que se comporta de jeitos diferentes para o mesmo tipo de objeto.
     Poli: muitos / Morfismo: forma - Polimorfismo: Muitas formas.
     - Objetos do mesmo tipo agindo de formas diferentes.
-    - 
+} 
 
 08/11/2023
  toda classe herda por padrão uma classe chamada object.
@@ -139,4 +213,89 @@ Quando falamos de exceções no JAva, existem dois grupos de exceções:
         - NullPointerException
         - ArrayIndexOutOfBoundsException
 
+JAR - Java Archive (arquivo compactado Java)
+
+JAVA LANG-
+    Linguagem padrão java
+    As funções String, int, e todas as outras que não precisamos iomportar estão na java LANG
+
+equals-
+    if(var1.equals(var2))
+        mesma coisa de 
+    if( var == var2)
+
+
+Podemos modificar o comportamentos de classes que estão no java lang, por exemplo o toString.
+
+Em java, Strings são imutáveis, 
+    Exemplo:
+        String camile = "Camile";
+        curso.replace("Java", "Python");
+        
+var.replace("", ""); //substitui caracteres iguais
+var = var.toLowerCAse(); //Deixa tudo minúsculo
+var = var.toUpperCase(); //Deixa tudo minuscula
+
+for(){
+    curso.charAt(i); //separa tudo por caracteres
+}
+
+COLECTIONS{
+
+    Listas{
+        List é uma interface, logo não conseguimos instanciala
+        Array list é do pacote Java util
+
+        Adicionar valores utilizando o add:
+            nomeLista.add(valorInserido);
+
+        size() - quantidade de elementos
+        remove() - remove um valor
+        get() - pega por indice
+        isEmpty () - verifica se é vazio
+        clear() - limpa toda a Listas
+        contains() - verifica se um elemento existe
+        replace() - substitui um elemento por outro;
+
+        (lista.) para ver mais
+
+        Foram criadas para melhorar a manipulação de dados
+        - Aceitam repetição de valores
+        - Aceitam vários tipos de valores
+        - Podemos especificar um tipo de dado também
+            ArrayList<String> nomes = new ArrayList<String> //tipo definido
+            ArrayList nomes = new ArrayList //tipo não definito
+        Colletions.sort(nomeList); // mostra e orgazina os dados por quantidade de caractere
+        (Por observação só utilizamos os tipos não primários)
+    }
+
+    Set/Conjuntos{
+        - Não garante a ordem
+        - Não aceitam repetissão de valores, não da erro, mas não somam
+        - Realiza uma ordenação, mas não aceita uma ordenação de fora como a sort por exemplo
+        - Não contém indice
+        Os conjunto ssão imṕlemetnados com a interface Set
+        e uma das classes que implementam  ersta interface é a HashSet
+
+        Set<String> nomes = new HashSet<String>();
+    }
+
+    Map{
+        Map<Chave, Valor> (variavel) = new HashMap<Chave, valor>();
+        Map<String, Integer> nome = new HashMap<String, Integer>();
+
+        adicionamos usando o put
+        Ex: 
+            map.put("Joao", 20);
+
+        
+        Relação chave valor
+    }
+}
+
+interfaces comparable - para fazer comparações, adicionar os métodos.
+    compareTo(Cliente outro)
+
+Interator - anda de elemento a elemento
+interator.hasNext() - verifica se há um próximo elemento
 
