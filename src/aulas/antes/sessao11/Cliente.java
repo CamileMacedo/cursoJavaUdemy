@@ -16,15 +16,19 @@ public class Cliente {
         System.out.println("Cliente " + nome + " Cadastrado!\n");
     }
 
-    float valorSaque(float saldo){
+    public float valorSaque(float saldo){
         System.out.println("Olá " + this.nome + "!\nSaldo disponível: " + saldo + "\nQual valor deseja sacar?");
         float valorSaque = Integer.parseInt(teclado.nextLine());
         return valorSaque;
     }
 
-    float valorDeposito(float saldo){
+    public float valorDeposito(float saldo){
         System.out.println("Olá " + this.nome + "!\nSaldo disponível: " + saldo + "\nQual valor deseja depositar?");
         float ValorDeposito= Integer.parseInt(teclado.nextLine());
         return ValorDeposito;
+    }
+
+    public String getNome(){
+        return this.nome;
     }
 }
