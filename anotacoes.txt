@@ -1,74 +1,3 @@
-package aulas.colections;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.Iterator;
-import java.util.Map;
-
-
-public class ListSetMap {
-    
-    public static void main(String[] args) {
-        
-        List<Integer> list1 = new ArrayList<Integer>();
-
-        list1.add(10);
-        list1.add(6);
-        list1.add(null);
-        list1.add(null);
-        list1.add(10);
-        printList(list1);
-
-        System.out.println("\n");
-
-        Set<Integer> set1 = new HashSet<>();
-        
-        set1.add(100);
-        set1.add(60);
-        set1.add(null);
-        set1.add(null);
-        set1.add(100);
-        printSet(set1);
-
-        System.out.println("\n");
-
-        Map<String, Integer> map1 = new HashMap<>();
-        
-        map1.put("Joao", 20);
-        map1.put("Maria", 24);
-        map1.put("Carlos", 21);
-        map1.put("Giulia", null);
-        printSet(map1);
-
-    }
-
-
-    private static void printList(List<Integer> list1) {
-        for(int i = 0; i < list1.size(); i++) {
-            System.out.println(list1.get(i));
-        }
-    }
-
-
-    private static void printSet(Set<Integer> set1) {  
-        Iterator<Integer> iterator =set1.iterator();
-
-        while(iterator.hasNext()) {
-            System.out.println(iterator.next());
-        }
-    }
-
-    private static void printMap(Map<String, Integer> map1) {  
-        Iterator<Integer> iterator =map1.iterator();
-
-        while(iterator.hasNext()) {
-            System.out.println(iterator.next());
-        }
-    }
-}
-//
 
 Interface
 Classes
@@ -249,7 +178,7 @@ COLECTIONS{
         Adicionar valores utilizando o add:
             nomeLista.add(valorInserido);
 
-        size() - quantidade de elementos
+        size() - quantidade de elementos // usado no for para percorrer a lista
         remove() - remove um valor
         get() - pega por indice
         isEmpty () - verifica se é vazio
